@@ -6,18 +6,12 @@ plugins {
 }
 
 android {
-    namespace = "dora.lifecycle.eventbus"
-    compileSdk = 32
+    namespace = "dora.lifecycle.arouter"
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 32
-    //        // Java版ARouter配置
-    //        javaCompileOptions {
-    //            annotationProcessorOptions {
-    //                arguments = [AROUTER_MODULE_NAME: project.getName()]
-    //            }
-    //        }
+        targetSdk = 33
     }
 
     buildTypes {
@@ -36,18 +30,16 @@ android {
 kapt {
     generateStubs = true
     arguments {
-        arg("AROUTER_MODULE_NAME", project.getName())
+        arg("AROUTER_MODULE_NAME", project.name)
     }
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.7.0")
+    implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.alibaba:arouter-api:1.4.1")
-    // Java用，不需要
-//    annotationProcessor("com.alibaba:arouter-compiler:1.2.2")
-    kapt("com.alibaba:arouter-compiler:1.2.2")
-    implementation("com.github.dora4:dora:1.0.94")
+    implementation("com.alibaba:arouter-api:1.5.2")
+    kapt("com.alibaba:arouter-compiler:1.5.2")
+    implementation("com.github.dora4:dora:1.0.123")
 }
 
 afterEvaluate {
@@ -57,7 +49,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dora-arouter-support"
-                version = "1.0"
+                version = "1.1"
             }
         }
     }
