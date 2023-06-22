@@ -13,7 +13,7 @@ allprojects {
 }
 // 添加以下代码到app模块的build.gradle
 dependencies {
-    def latest_version = '1.2'
+    def latest_version = '1.3'
     api 'com.github.dora4:dora-arouter-support:$latest_version'
 }
 ```
