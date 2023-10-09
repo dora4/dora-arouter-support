@@ -12,6 +12,12 @@ allprojects {
     }
 }
 // 添加以下代码到app模块的build.gradle
+kapt {
+    generateStubs = true
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
 dependencies {
     implementation 'com.github.dora4:dora-arouter-support:1.3'
 }
