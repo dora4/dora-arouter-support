@@ -12,6 +12,9 @@ allprojects {
     }
 }
 // 添加以下代码到app模块的build.gradle
+plugins {
+    id("kotlin-kapt")
+}
 kapt {
     generateStubs = true
     arguments {
