@@ -4,14 +4,14 @@ dora-arouter-support
 
 #### gradle依赖配置
 
-```groovy
-// 添加以下代码到项目根目录下的build.gradle
+```kotlin
+// 添加以下代码到项目根目录下的build.gradle.kts
 allprojects {
     repositories {
-        maven { url "https://jitpack.io" }
+        maven { setUrl("https://jitpack.io") }
     }
 }
-// 添加以下代码到app模块的build.gradle
+// 添加以下代码到app模块的build.gradle.kts
 plugins {
     id("kotlin-kapt")
 }
@@ -22,6 +22,6 @@ kapt {
     }
 }
 dependencies {
-    implementation 'com.github.dora4:dora-arouter-support:1.3'
+    implementation("com.github.dora4:dora-arouter-support:1.3")
 }
 ```
