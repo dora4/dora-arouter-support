@@ -22,6 +22,8 @@ kapt {
     }
 }
 dependencies {
-    implementation("com.github.dora4:dora-arouter-support:1.3")
+    implementation("com.github.dora4:dora:1.1.37")
+    implementation("com.github.dora4:dora-arouter-support:1.6")
+    kapt("com.alibaba:arouter-compiler:1.5.2")
 }
 ```
