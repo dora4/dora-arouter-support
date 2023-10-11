@@ -12,14 +12,14 @@ class ARouterGlobalConfig : GlobalConfig {
         context: Context?,
         lifecycles: MutableList<ApplicationLifecycleCallbacks>?
     ) {
-        lifecycles!!.add(ARouterAppLifecycle())
+        lifecycles?.add(ARouterAppLifecycle())
     }
 
     override fun injectActivityLifecycle(
         context: Context?,
         lifecycles: MutableList<Application.ActivityLifecycleCallbacks>?
     ) {
-        lifecycles!!.add(ARouterActivityLifecycle())
+        lifecycles?.add(ARouterActivityLifecycle())
     }
 
     override fun injectFragmentLifecycle(

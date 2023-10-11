@@ -6,13 +6,13 @@ import com.alibaba.android.arouter.launcher.ARouter
 
 class ARouterAppLifecycle : ApplicationLifecycleCallbacks {
 
-    override fun attachBaseContext(base: Context?) {
+    override fun attachBaseContext(base: Context) {
     }
 
-    override fun onCreate(application: Application?) {
+    override fun onCreate(application: Application) {
         ARouter.init(application)
     }
 
-    override fun onTerminate(application: Application?) {
+    override fun onTerminate(application: Application) {
     }
 }
