@@ -27,7 +27,8 @@ dependencies {
     kapt("com.alibaba:arouter-compiler:1.5.2")
 }
 ```
-// 添加一下代码到AndroidManifest
+#### Dora SDK生命周期注入配置
+添加以下代码到AndroidManifest.xml
 ```xml
 <application>
         <meta-data
