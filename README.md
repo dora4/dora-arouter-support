@@ -27,3 +27,11 @@ dependencies {
     kapt("com.alibaba:arouter-compiler:1.5.2")
 }
 ```
+// 添加一下代码到AndroidManifest
+```xml
+<application>
+        <meta-data
+            android:name="dora.lifecycle.config.ARouterGlobalConfig"
+            android:value="GlobalConfig" />
+</application>
+```
