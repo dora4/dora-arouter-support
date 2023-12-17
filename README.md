@@ -24,7 +24,7 @@ kapt {
 dependencies {
     // 扩展包必须在有主框架dora的情况下使用
     implementation("com.github.dora4:dora:1.1.46")
-    implementation("com.github.dora4:dora-arouter-support:1.6")
+    implementation("com.github.dora4:dora-arouter-support:1.7")
     kapt("com.alibaba:arouter-compiler:1.5.2")
 }
 ```
