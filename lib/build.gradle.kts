@@ -7,11 +7,11 @@ plugins {
 
 android {
     namespace = "dora.lifecycle.arouter"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 34
     }
 
     buildTypes {
@@ -27,9 +27,8 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
-    implementation("com.github.dora4:dora:1.1.46")
+    implementation("com.github.dora4:dora:1.3.14")
     api("com.alibaba:arouter-api:1.5.2")
 }
 
@@ -40,7 +39,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dora-arouter-support"
-                version = "1.7"
+                version = "1.8"
             }
         }
     }
