@@ -27,7 +27,7 @@ android {
 
 dependencies {
     implementation("androidx.recyclerview:recyclerview:1.4.0")
-    implementation("com.github.dora4:dora:1.3.53")
+    implementation("com.github.dora4:dora:1.3.57")
     api("com.alibaba:arouter-api:1.5.2")
 }
 
@@ -38,7 +38,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dora-arouter-support"
-                version = "1.9"
+                version = "1.10"
             }
         }
     }
